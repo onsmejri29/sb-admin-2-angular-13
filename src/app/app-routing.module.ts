@@ -54,11 +54,6 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
-  },
-  {
-    path: '404',
-    component: NotFoundComponent,
-    canActivate : [AuthGuardService] 
   },  
   {
     path: 'register',
@@ -89,6 +84,11 @@ const routes: Routes = [
     component: UtilitiesOtherComponent,
     canActivate : [AuthGuardService] 
   },
+  {
+    path: '404',
+    component: NotFoundComponent,
+    canActivate : [AuthGuardService] 
+  },  
   {
     path: '**',
     redirectTo: '/404'

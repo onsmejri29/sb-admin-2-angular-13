@@ -5,19 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class LoginService {
   
-  get isLoged(){
+  get isLoggedIn(){
     return window.localStorage.getItem('loged') === 'true';
   }
 
   async login(){
     await window.localStorage.setItem('loged','true');
-  }
+  }  
 
   async logout(){
     await window.localStorage.setItem('loged','false');
   }
-
-  constructor(
-    
+  
+  constructor(    
   ) { }
 }
