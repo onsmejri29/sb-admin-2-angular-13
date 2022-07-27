@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LoginService } from './services/login.service';
+declare var sb_admin_2:any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'sb-admin-2-angular-13';
+export class AppComponent implements OnInit{
+
+  constructor(
+    public login : LoginService
+  ){
+
+  }
+
+  ngOnInit(): void {
+    
+    sb_admin_2();
+    
+  }
+  
 }
