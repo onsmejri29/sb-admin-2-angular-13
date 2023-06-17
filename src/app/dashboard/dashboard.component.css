@@ -1,0 +1,13 @@
+th{
+    color: black;
+}
+
+.headerColor{
+    background: #070101;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(56, 1, 1), rgb(122, 8, 8));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(56, 1, 1), rgb(122, 8, 8))
+}
